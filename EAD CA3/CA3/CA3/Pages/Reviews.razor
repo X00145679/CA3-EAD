@@ -1,0 +1,60 @@
+﻿@page "/"
+@inject HttpClient Http
+@using Newtonsoft.Json
+@using CA3
+
+
+<h1>SEARCH MOVIE REVIEWS</h1>
+<EditForm Model="@searchForm" OnValidSubmit="@callApi">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText id="name" @bind-Value="searchForm.Name" />
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+@if (reviews != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Review Author</th>
+                <th>Title</th>
+                <th>Summary</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var review in reviews.results)
+            {
+            <tr>
+
+                <td>@review.display_title</td>
+                <td>@review.byline</td>
+                <td>@review.headline</td>   
+                <td>@review.summary_short</td>
+                <td>@review.link.url</td>
+
+
+
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private SearchForm searchForm = new SearchForm();
+    Review reviews;
+    private async Task callApi()
+    {
+
+        var response = await Http.GetStringAsync("https://api.nytimes.com/svc/movies/v2/reviews/search.json?critics-pick=Y&opening-date=1990-01-01&order=by-title&publication-date=1930-01-01%3B2020-01-01&query="+searchForm.Name+"&api-key=JA5osVzynnO1QMnjyzcOBwGQJbQAhVpA");
+        reviews = Newtonsoft.Json.JsonConvert.DeserializeObject<Review>(response);
+
+
+    }
+
+}
