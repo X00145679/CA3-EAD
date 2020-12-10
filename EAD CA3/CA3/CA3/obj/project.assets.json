@@ -439,6 +439,15 @@
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
+      },
+      "Verify.Bunit/6.4.0": {
+        "type": "package",
+        "build": {
+          "build/Verify.Bunit.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Verify.Bunit.targets": {}
+        }
       }
     }
   },
@@ -1666,6 +1675,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Verify.Bunit/6.4.0": {
+      "sha512": "BZk1tc8zlZLDzPWPy8uSLWewJP6/Ga0+45/r0lrWJMIrnFD6fvNv+pMzn6Hwej3r9K5D6+9rdp+mxvFdkbGWlg==",
+      "type": "package",
+      "path": "verify.bunit/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Verify.Bunit.targets",
+        "buildMultiTargeting/Verify.Bunit.targets",
+        "icon.png",
+        "lib/net5.0/Verify.Bunit.dll",
+        "lib/net5.0/Verify.Bunit.xml",
+        "verify.bunit.6.4.0.nupkg.sha512",
+        "verify.bunit.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1674,7 +1699,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
       "Newtonsoft.Json >= 12.0.3",
-      "System.Net.Http.Json >= 3.2.0"
+      "System.Net.Http.Json >= 3.2.0",
+      "Verify.Bunit >= 6.4.0"
     ]
   },
   "packageFolders": {
@@ -1735,6 +1761,10 @@
           "System.Net.Http.Json": {
             "target": "Package",
             "version": "[3.2.0, )"
+          },
+          "Verify.Bunit": {
+            "target": "Package",
+            "version": "[6.4.0, )"
           }
         },
         "imports": [

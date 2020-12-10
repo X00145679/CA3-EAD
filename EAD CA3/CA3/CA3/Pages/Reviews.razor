@@ -1,22 +1,30 @@
-﻿@page "/"
+﻿@page "/Reviews"
 @inject HttpClient Http
 @using Newtonsoft.Json
 @using CA3
 
 
-<h1>SEARCH MOVIE REVIEWS</h1>
+<h1>SEARCH NEW YORK TIMES MOVIE REVIEWS</h1>
 <EditForm Model="@searchForm" OnValidSubmit="@callApi">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     <InputText id="name" @bind-Value="searchForm.Name" />
-
+    <br>
+    <br>
+    <label>
+        Critics Choice:
+        <InputCheckbox @bind-Value="searchForm.critic" />
+        
+    </label>
+    <br>
+    <br>
     <button type="submit">Submit</button>
 </EditForm>
 
 @if (reviews != null)
 {
-    <table class="table">
+    <table class="table table-dark">
         <thead>
             <tr>
                 <th>Name</th>
@@ -35,7 +43,7 @@
                 <td>@review.byline</td>
                 <td>@review.headline</td>   
                 <td>@review.summary_short</td>
-                <td>@review.link.url</td>
+                <td><a href="@review.link.url">link</a></td>
 
 
 
@@ -48,13 +56,27 @@
 @code {
     private SearchForm searchForm = new SearchForm();
     Review reviews;
+    private char critics;
+    private string APIKEY = "JA5osVzynnO1QMnjyzcOBwGQJbQAhVpA";
     private async Task callApi()
     {
+        try
+        {
+            if (searchForm.critic)
+                critics = 'Y';
+            else
+                critics = 'N';
+            var response = await Http.GetStringAsync("https://api.nytimes.com/svc/movies/v2/reviews/search.json?critics-pick="+critics+"&opening-date=1990-01-01&order=by-title&publication-date=1930-01-01%3B2020-01-01&query=" + searchForm.Name + "&api-key="+APIKEY);
+            reviews = Newtonsoft.Json.JsonConvert.DeserializeObject<Review>(response);
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine("Exception: "+e);
+        }
 
-        var response = await Http.GetStringAsync("https://api.nytimes.com/svc/movies/v2/reviews/search.json?critics-pick=Y&opening-date=1990-01-01&order=by-title&publication-date=1930-01-01%3B2020-01-01&query="+searchForm.Name+"&api-key=JA5osVzynnO1QMnjyzcOBwGQJbQAhVpA");
-        reviews = Newtonsoft.Json.JsonConvert.DeserializeObject<Review>(response);
 
 
     }
+
 
 }
