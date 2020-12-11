@@ -1,0 +1,65 @@
+﻿@page "/Reviewers"
+@inject HttpClient Http
+@using Newtonsoft.Json
+@using CA3
+
+
+<h1>SEARCH NEW YORK TIMES MOVIE REVIEWERS</h1>
+<EditForm Model="@searchForm" OnValidSubmit="@callApi">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText id="name" @bind-Value="searchForm.Name" />
+    
+    <button type="submit">Submit</button>
+</EditForm>
+
+@if (reviewers != null)
+{
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Work Status</th>
+                <th>Bio</th>           
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reviewer in reviewers.results)
+            {
+            <tr>
+
+                <td>@reviewer.display_name</td>
+                <td>@reviewer.status</td>
+                <td>@reviewer.bio</td>
+                
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private SearchForm searchForm = new SearchForm();
+    Reviewer reviewers;
+    private char critics;
+    private string APIKEY = "JA5osVzynnO1QMnjyzcOBwGQJbQAhVpA";
+    private async Task callApi()
+    {
+        try
+        {
+            
+            var response = await Http.GetStringAsync("https://api.nytimes.com/svc/movies/v2/critics/"+searchForm.Name+".json?api-key=" + APIKEY);
+            reviewers = Newtonsoft.Json.JsonConvert.DeserializeObject<Reviewer>(response);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Exception: " + e);
+        }
+
+
+
+    }
+
+
+}

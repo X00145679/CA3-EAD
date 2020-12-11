@@ -29,8 +29,9 @@
             <tr>
                 <th>Name</th>
                 <th>Review Author</th>
+                <th>Date Published</th>
                 <th>Title</th>
-                <th>Summary</th>
+                <th>Summary</th> 
                 <th>Link</th>
             </tr>
         </thead>
@@ -41,7 +42,8 @@
 
                 <td>@review.display_title</td>
                 <td>@review.byline</td>
-                <td>@review.headline</td>   
+                <td>@review.publication_date</td>
+                <td>@review.headline</td>
                 <td>@review.summary_short</td>
                 <td><a href="@review.link.url">link</a></td>
 

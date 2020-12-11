@@ -535,7 +535,6 @@ D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\Razor\_Import
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\CA3.RazorTargetAssemblyInfo.cache
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\CA3.csproj.CopyComplete
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\blazor\unlinked.output
-D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\dVcdKcU7_yiR9tpOqPlC_iFYezNvj55WD3VKm4O6fCw=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash
@@ -587,13 +586,11 @@ D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\_kk
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\qBmDPHrNOq5fC2cU8iAmEzyVZACC1GSSxgNakL1dOxw=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\Htspo1zD0tZS-hhdpRpCzP323e0fpmjMv-haoi5_juE=.hash
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\compressed\_framework\_bin\CA3.dll.gz
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\compressed\_framework\_bin\Newtonsoft.Json.dll.gz
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\compressed\_framework\_bin\netstandard.dll.gz
@@ -715,3 +712,8 @@ D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\staticwebasse
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\CA3.dll
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\CA3.pdb
 D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\CA3.csprojAssemblyReference.cache
+D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Reviewers.razor.g.cs
+D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\Razor\Pages\Reviewers.razor.g.cs
+D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\1ED7UqZJiWzd84dJ6L51hJpWt2-6Y8D6KqUEdm6162Q=.hash
+D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\TiU7PMj8vhJRhiyI76rPGbk0jNCsbR7WdeBjZNBIa6k=.hash
+D:\stuff\projects\CA3-EAD\EAD CA3\CA3\CA3\obj\Debug\netstandard2.1\integrity\jD8LYTb4ziQiA6uwKo8fiU0C1hcovpkpJ3O8jv_MRjA=.hash
